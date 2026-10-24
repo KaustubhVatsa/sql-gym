@@ -1,5 +1,8 @@
 # SQL Gym
 
+[![CI](https://github.com/KaustubhVatsa/sql-gym/actions/workflows/ci.yml/badge.svg)](https://github.com/KaustubhVatsa/sql-gym/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **See how SQL actually runs.** Type a query and watch it execute, step by step, with the real intermediate tables: which rows a JOIN matched, which a WHERE dropped (and why), how rows were grouped, which window frame each row saw.
 
 ![SQL Gym demo](docs/demo.gif)
