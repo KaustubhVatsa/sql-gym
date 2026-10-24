@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SQL Gym</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c9cff'/%3E%3Cpath d='M8 12h16M8 16h16M8 20h10' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/css/app.css">
+<script>try{var t=localStorage.getItem('sg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button id="toggle-side" class="icon-btn" title="Toggle sidebar" aria-label="Toggle sidebar">☰</button>
+  <div class="logo"><span class="logo-mark"></span>SQL Gym</div>
+  <div class="grow"></div>
+  <div id="progress" class="progress" title="Exercises passed"></div>
+  <button id="theme" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">◐</button>
+</header>
+<div class="shell">
+  <aside id="side" class="side">
+    <button id="playground" class="side-item playground"><span class="dot"></span>Playground<span class="muted"> · free query</span></button>
+    <div id="ex-list"></div>
+    <div class="side-h">Tables</div>
+    <div id="tables"></div>
+  </aside>
+  <main class="main">
+    <section class="left">
+      <div id="task" class="task" hidden></div>
+      <div class="editor-card">
+        <div class="ed-bar">
+          <button id="run" class="btn primary" title="Run and play (Ctrl/⌘ + Enter)">▶ Run</button>
+          <button id="format" class="btn" title="Format SQL (Shift+Alt+F)">Format</button>
+          <select id="examples" class="sel" title="Example queries"></select>
+          <span class="grow"></span>
+          <span id="status" class="status"></span>
+        </div>
+        <div id="editor" class="editor"></div>
+        <div id="error" class="error" hidden></div>
+      </div>
+      <div id="result" class="result"></div>
+    </section>
+    <section class="right">
+      <div id="viz" class="viz"></div>
+    </section>
+  </main>
+</div>
+<dialog id="dlg"><div id="dlg-body"></div></dialog>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
