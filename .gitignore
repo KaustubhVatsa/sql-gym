@@ -1,0 +1,12 @@
+# generated / local-only
+shop.db
+shop.db.tmp
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+
+# your own practice answers and launch assets stay on your machine
+answers/*
+!answers/.gitkeep
+launch/
